@@ -57,7 +57,7 @@ header span i{
 
 #home{
   
-  background: url('../libbg.jpeg');
+  background: url('libbg.jpeg');
   background-position: center;
   background-size: cover;
  display: flex;
@@ -207,7 +207,7 @@ header span i{
   margin-left:50px;
 }
 #contact{
-  background-image: url('../bg2.jpg');
+  background-image: url('bg2.jpg');
   background-position: center;
   background-size: cover;
   
