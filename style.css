@@ -1,0 +1,340 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 50px;
+  position: relative;
+  
+  top: 0;
+}
+.logo{
+  margin-top: 10px;
+  padding: 7px;
+}
+.logo a{
+  text-decoration: none;
+  color: green;
+  font-size: 25px;
+}
+nav ul{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 13px;
+}
+nav ul li{
+  list-style: none;
+  margin: 5px;
+  padding: 7px;
+  
+}
+nav ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+nav ul li a:hover{
+  transform: translateY(30);
+  font-size: 1.1rem;
+}
+header span{
+  margin-top:5px;
+  font-size: 50px;
+  display: none;
+  
+}
+header span i{
+  width: 2px;
+}
+
+#home{
+  
+  background: url('../libbg.jpeg');
+  background-position: center;
+  background-size: cover;
+ display: flex;
+  justify-content: space-between;
+}
+.des{
+  background-color: green;
+  height: 50%;
+  color: white;
+  padding: 20px;
+  margin: 30px;
+  margin-top: 80px;
+}
+.des p{
+  font-size: 30px;
+  padding: 10px;
+  margin-bottom: 2px;
+}
+.des a{
+  text-decoration: none;
+  color: black;
+  background-color: yellow;
+  padding: 7px;
+  border-radius: 4px;
+  margin-left: 50px;
+}
+
+.des a:hover{
+  background: blue;
+  color: white;
+}
+
+
+.img p{
+  margin-top: 90px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+}
+.img input{
+  outline: none;
+  padding: 10px;
+  border: none;
+  width: 40vw;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+.img button{
+  margin: 10px;
+  margin-left: 50px;
+  padding: 6px;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#product h2{
+  text-align: center;
+  margin: 10px;
+}
+#product .product-container{
+  margin: 5px;
+  display: grid;
+  grid-template-columns: repeat(4,4fr);
+}
+.product{
+  box-shadow: 2px 2px 2px 2px green;
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product h3{
+  text-align: center;
+}
+.product img{
+  width: 100px;
+  height: 100px;
+}
+.product p{
+  font-size: 1.1rem;
+  padding: 6px;
+}
+.product button{
+  background: green;
+  color: white;
+  padding: 10px;
+  border: none;
+}
+
+#services{
+  background: white;
+}
+#services h2{
+  text-align: center;
+  margin: 13px;
+}
+.services-container{
+  display: flex;
+  flex-direction: row;
+}
+.service{
+  width: 200px;
+  text-align: center;
+  margin: 10px;
+  background: linear-gradient(10deg,green,yellow);
+  color: white;
+  border-radius: 13px;
+  padding: 5px;
+}
+.service p.h{
+  border-bottom: 1px solid black;
+  font-weight: 400;
+  font-size: 20px;
+}
+.service button{
+  background: blue;
+  color: white;
+  padding: 6px;
+  margin: 8px;
+  border: none;
+}
+.service button:hover{
+  background-color: gold;
+}
+#about{
+  font-size: 18px;
+  background: green;
+  color: white;
+}
+#about h2{
+  text-align: center;
+  margin: 10px;
+}
+#about .about-details{
+  padding: 15px;
+}
+#about .about-details p a{
+  color: yellow;
+}
+#about ol{
+  margin-top: 10px;
+  margin-left:50px;
+}
+#contact{
+  background-image: url('../bg2.jpg');
+  background-position: center;
+  background-size: cover;
+  
+  
+}
+#contact h2{
+  text-align: center;
+  margin: 10px;
+  background: white;
+}
+#contact p.f{
+  font-size: 20px;
+  margin: 6px;
+  color: black;
+  opacity: 3;
+  background: yellow;
+  font-weight: 500;
+  padding: 5px;
+}
+#contact span{
+  margin-left: 15px;
+  background: green;
+  color: white;
+  padding: 3px;
+  margin-bottom: 40px;
+}
+#contact .newsletter-form{
+  color: white;
+}
+.newsletter-form p{
+  background: white;
+  color: black;
+  padding: 9px;
+}
+.newsletter-form form{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  background: black;
+  padding: 10px;
+  margin-left: 30%;
+}
+.newsletter-form form input{
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+
+.newsletter-form button{
+  width: 30%;
+  padding: 7px;
+  margin: 6px;
+  background: green;
+  border: none;
+  border-radius: 5px;
+}
+
+footer{
+  height: 50px;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 500px)
+{
+  header nav ul{
+    display: none;
+  }
+  header span{
+    display: block;
+    position: absolute;
+    right: 15%;
+    
+  }
+  header span i{
+    width: 3px;
+  }
+  #home{
+    flex-direction: column;
+    
+  }
+  #home p{
+    color: white;
+  }
+  #home input{
+    width: 70vw;
+  }
+  #home button{
+    padding: 3%;
+  }
+  
+  #services .services-container{
+    flex-direction: column;
+    align-items: center
+  }
+  #services .services-container .service{
+    width: 90%;
+    font-size: 1.2rem;
+  }
+  #services .services-container .service p.h{
+    font-size: 1.5rem;
+    background: white;
+    color: green;
+  }
+  #contact .newsletter-form form{
+    margin-left: 10%;
+    margin-bottom: 10px;
+  }
+  .open{
+    display: flex;
+  flex-direction: column;
+  background-color: white;
+    color: green;
+  border: 1px solid black;
+  width:200px;
+  margin-right: 50px;
+  margin-top: 50px;
+}
+  .open li a{
+    display: flex;
+    justify-content: normal;
+    width: 100%;
+    height: 20px;
+    
+  }
+  
+}
+
+
